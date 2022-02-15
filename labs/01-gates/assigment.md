@@ -11,9 +11,13 @@
 ```vhdl
 begin
     forg_o  <= (not(b_i) and a_i) or (not(c_i) and not(b_i));
-    fnand_o <= ((not b_i nand a_i) nand (not c_i nand not b_i));
-    fnor_o  <= b_i nor (a_i nor not c_i);
+    fnand_o <= (((b_i nand b_i) nand a_i) nand ((c_i nand c_i) nand (b_i nand b_i)));
+    fnor_o  <= b_i nor (a_i nor (c_i nor c_i));
+    fleft_o <= (a_i and b_i) or (a_i and c_i);
+    fright_o <= a_i and (b_i or c_i);
+    
 end architecture dataflow;
+
 ```
 
 3. Complete table with logic functions' values:
