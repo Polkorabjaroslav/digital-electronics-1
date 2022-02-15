@@ -9,11 +9,10 @@
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-architecture dataflow of demorgan is
 begin
     forg_o  <= (not(b_i) and a_i) or (not(c_i) and not(b_i));
     fnand_o <= ((not b_i nand a_i) nand (not c_i nand not b_i));
-    fnor_o  <= not(( b_i nor not(a_i)) nor ((c_i) nor (b_i)));
+    fnor_o  <= b_i nor (a_i nor not c_i);
 end architecture dataflow;
 ```
 
