@@ -10,7 +10,7 @@
 
    Less than:
 
-   ![K-maps](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/DE1less.jpg)
+   ![K-maps]()
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
