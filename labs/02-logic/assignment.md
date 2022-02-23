@@ -6,11 +6,11 @@
 
    Greater than:
 
-   ![K-maps](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/DE1great.jpg)
+   ![K-maps](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/DE1great1.jpg)
 
    Less than:
 
-   ![K-maps](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/DE1less1.jpg)
+   ![K-maps](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/DE1less2.jpg)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
