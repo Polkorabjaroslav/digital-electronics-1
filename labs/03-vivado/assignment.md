@@ -1,4 +1,4 @@
-# Lab 3: YOUR_FIRSTNAME LASTNAMEE
+# Lab 3: Jaroslav Polkorab
 
 ### Three-bit wide 4-to-1 multiplexer
 
@@ -7,15 +7,17 @@
 ```vhdl
 architecture Behavioral of mux_3bit_4to1 is
 begin
-
-    -- WRITE YOUR CODE HERE
+    f_o <=  a_i when (sel_i = "00") else
+            b_i when (sel_i = "01") else
+            c_i when (sel_i = "10") else
+            d_i;                 -- All other combinations
 
 end architecture Behavioral;
 ```
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Sn%C3%ADmek%20obrazovky%202022-03-05%20215146.jpg)
 
 3. Listing of pin assignments for the Nexys A7 board in `nexys-a7-50t.xdc`. **DO NOT list** the whole file, just your switch and LED settings.
 
