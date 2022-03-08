@@ -4,6 +4,7 @@ The Nexys A7 board provides two four-digit common anode seven-segment LED displa
 
 9.1 Seven-Segment Display
 The Nexys A7 board contains two four-digit common anode seven-segment LED displays, configured to behave like a single eight-digit display. Each of the eight digits is composed of seven segments arranged in a “figure 8” pattern, with an LED embedded in each segment. Segment LEDs can be individually illuminated, so any one of 128 patterns can be displayed on a digit by illuminating certain LED segments and leaving the others dark, as shown in Figure 9.1.1. Of these 128 possible patterns, the ten corresponding to the decimal digits are the most useful.
+
 ![schema](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/schema1.png)
 ![schema](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/schema3.png)
 
