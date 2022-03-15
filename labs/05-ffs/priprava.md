@@ -14,26 +14,26 @@
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 1 | 0 | `q(n+1)` has the same level as `d` |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 0 | 1 | `q(n+1)` has the same level as `d` |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 1 | 1 | `q(n+1)` has the same level as `d` |
 
    **JK-type FF**
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
    | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 0 | 0 | 0 | Output did not change |
    | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 0 | 1 | 1 | Output did not change |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 |  |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 |  |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |  |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 1 | 0 | 1 | Reset |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 1 | 0 | 1 | Reset |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 0 | 0 | 1 | Set |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 0 | 1 | 1 | Set |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 1 | 1 | 1 | Toggle |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 1 | 0 | 0 | Toggle |
 
    **T-type FF**
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 0 | 0 | Output did not change |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 |  |  |  |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 0 | 1 | 1 | Output did not change |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 0 | 1 | Invert |
+   | ![rising](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/eq_uparrow.png) | 1 | 1 | 0 | Invert |
