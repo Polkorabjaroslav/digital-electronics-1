@@ -29,8 +29,8 @@ architecture testbench of tb_mux_3bit_4to1 is
     signal s_b           : std_logic_vector(2 - 1 downto 0);
     signal s_c           : std_logic_vector(2 - 1 downto 0);
     signal s_d           : std_logic_vector(2 - 1 downto 0);
-    signal sel_i         : std_logic_vector(1 - 1 downto 0);
-    signal f_o           : std_logic_vector(2 - 1 downto 0);
+    signal s_sel         : std_logic_vector(1 - 1 downto 0);
+    signal s_f           : std_logic_vector(2 - 1 downto 0);
 begin
     -- Connecting testbench signals with comparator_2bit
     -- entity (Unit Under Test)
@@ -50,17 +50,17 @@ begin
     p_stimulus : process
     begin
         -- Report a note at the beginning of stimulus process
-        report "Stimulus process started" severity note;
 
         -- First test case
         s_a <= "100"; 		  -- Such as "0101" if ID = xxxx56
         s_b <= "101";        -- Such as "0110" if ID = xxxx56
         s_c <= "110";
-        s_d <= "111";    
-   f_o <= s_a when (sel_s = "00" ) else
-          s_b when (sel_s = "01" ) else
-          s_c when (sel_s = "10" ) else
-          s_d when (sel_s = "11" );     
+        s_d <= "111";
+         
+        s_f <= s_a when (s_sel = "00" ) else
+               s_b when (s_sel = "01" ) else
+               s_c when (s_sel = "10" ) else
+               s_d when (s_sel = "11" );     
     
     end process p_stimulus;
 
