@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 03/16/2022 03:45:52 PM
+-- Create Date: 03/10/2022 12:01:29 PM
 -- Design Name: 
 -- Module Name: t_ff_rst - Behavioral
 -- Project Name: 
@@ -36,39 +36,33 @@ entity t_ff_rst is
            rst : in STD_LOGIC;
            t : in STD_LOGIC;
            q : out STD_LOGIC;
-           q_n : out STD_LOGIC;
-           q_m : out STD_LOGIC;
            q_bar : out STD_LOGIC);
 end t_ff_rst;
 
 architecture Behavioral of t_ff_rst is
-    -- It must use this local signal instead of output ports
-    -- because "out" ports cannot be read within the architecture
     signal s_q : std_logic;
-    signal s_q_bar : std_logic;
 begin
     --------------------------------------------------------
-    -- p_t_ff_rst:
-    -- T type flip-flop with a high-active synchro reset,
+    -- p_d_ff_rst:
+    -- D type flip-flop with a high-active sync reset,
     -- rising-edge clk.
-    -- q(n+1) = t./q(n) + /t.q(n)
-    -- q(n+1) =  q(n) if t = 0 (no change)
-    -- q(n+1) = /q(n) if t = 1 (inversion)
+    -- q(n+1) = d
     --------------------------------------------------------
     p_t_ff_rst : process(clk)
     begin
-        if rising_edge(clk) then
-           if (rst = '1') then 
-           q <='0';
-           q_bar <='1';
-           q_n <= '0';
-           q_m <= '0';
-           
-           else 
-           q_n <= (t and not(q)) or ((not t) and q);
-           q_m <=q_n;
-           q_bar <= not q_n;
-           end if;
+        if rising_edge(clk) then  -- Synchronous process
+
+            -- USE HIGH-ACTIVE RESET HERE
+            if (rst = '1') then  
+                s_q     <= '0';
+            elsif (t = '0') then
+                s_q <= s_q;
+            else
+                s_q <= not s_q;
+            end if;    
         end if;
     end process p_t_ff_rst;
+    
+    q       <= s_q;
+    q_bar   <= not s_q;
 end architecture Behavioral;
