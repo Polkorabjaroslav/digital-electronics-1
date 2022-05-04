@@ -69,6 +69,11 @@ Dále musíme řešit mezery mezi znaky a mezery mezi písmeny. Tento problém �
 Teď když už máme snímání mezer a znaků můžeme začít náš výstup do bufferu. Toto jsme ošetřili tím, že posouváme přepisujeme 10 bitový vektor námi zvolenou hodnotou pro **dot 01** pro **dash 11**. 
 Dále námi zadanou hodnotu porovnáme a přiřadíme ji hodnotu výstupu na sedmisegmentový display.
 
+
+
+**Schéma našeho main**
+![main](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Main_p.jpg)
+
 **Ukázka našeho ošetření vstupu**
 ```vhdl 
  p_main : process(clk)
