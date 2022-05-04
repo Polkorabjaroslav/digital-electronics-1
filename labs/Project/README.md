@@ -33,12 +33,12 @@
 <a name="hardware"></a>
 
 ## Hardware description
-Při realizaci jsme použili dnesky Nexys-A7:
+Pro realizaci jsme použili dnesku Nexys-A7:
 ![deska](https://static.packt-cdn.com/products/9781789805413/graphics/image/12710_01_11.jpg)
-Pomocí switchů jsme schopni zadávat námi požadovaný signál u nás tedy **dot** či **dash**. V našem případě budeme používat pouze jeden switch na zadávání potřebných signálů. 
-Dále na desce použijeme už integrovaný sedmisegmentový display do kterého zapíšeme dekodovaný výstupní signál.
-Do našeho kódu jsme ještě implementovali jeden switch na reset. 
-Deska má sama v sobě generátor impilsů clock který budeme využívat k dekódovaní i zadávání.
+Pomocí switchů jsme schopni zadávat námi požadovaný vstupní signál morseovky, u nás tedy: **dot** či **dash**. V našem případě budeme používat pouze jeden switch na zadávání potřebných signálů.
+Dále na desce použijeme integrovaný sedmisegmentový display, do kterého zapíšeme dekodovaný výstupní signál.
+Do našeho kódu jsme ještě implementovali jeden button na reset.
+Deska má sama v sobě generátor impilsů clock, který budeme využívat k dekódovaní i zadávání.
 
 <a name="modules"></a>
 
@@ -55,12 +55,12 @@ Převodník na 7mi segmentový displej:
 ![unknown](https://user-images.githubusercontent.com/99871518/166684341-8de35626-589e-4e38-aa76-c6ffe7b51a29.png)
 
 **Clock_enable** 
-- Clock_enable nám zajišťuje zpomalení vnitřního clocku naší desky. To znamená, že nemusíme počítat každou náběžnou hranu clocku s frekncí třeba 400khz, ale počítáme pouze každou 100 náběžnou hranu(a více záleží na uživatelském nastavení a na naší potřebě) 
-Blok našého clock_enablu vypadá takto: 
+- Clock_enable nám zajišťuje zpomalení vnitřního clocku naší desky. To znamená, že nemusíme počítat každou náběžnou hranu clocku s frekncí třeba 400khz, ale počítáme pouze každou 100. náběžnou hranu (více záleží na uživatelském nastavení a na naší potřebě).
+Blok našeho clock_enablu vypadá takto: 
 
 ![clock_enable](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Clockenable.jpg)
 
-simulace tohoto clock_enablu vypadá poté takto: 
+Simulace tohoto clock_enablu vypadá následně takto: 
 ![clock_enablesim](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/clockenablesim.jpg)
 
 **Main**
