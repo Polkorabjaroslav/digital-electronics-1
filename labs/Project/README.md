@@ -6,7 +6,7 @@
 - návrh morse code příjímače, vytvoření a zpracování kódu
 
 **Sedlák Ondřej**
-- zpracování schémat
+- zpracování schémat, kódový asistent
 
 **Gedeon Dominik**
 - dokumentace projektu
