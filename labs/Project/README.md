@@ -150,9 +150,9 @@ Můžeme vidět, že obvod se vrací zpět původního stavu sám po uplynutí n
 <a name="top"></a>
 
 ## TOP module description and simulations
-
-
-Top umožňuje propojit jednotlivé moduly a následně vše nahrát do desky Nexys-A7.
+Náš top soubor zajišťuje kontakt mezi hardware vstupem a výstupem naší desky. 
+U tomto topu připojuneme jednotlivým výstupům hodnoty. 
+![top](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Top.png)
 
 <a name="video"></a>
 
