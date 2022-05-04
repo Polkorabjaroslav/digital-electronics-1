@@ -152,6 +152,9 @@ Můžeme vidět, že obvod se vrací zpět původního stavu sám po uplynutí n
 ## TOP module description and simulations
 Náš top soubor zajišťuje kontakt mezi hardware vstupem a výstupem naší desky. 
 U tomto topu připojuneme jednotlivým výstupům hodnoty. 
+
+
+**Schéma našeho topu**
 ![top](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Top.png)
 
 <a name="video"></a>
