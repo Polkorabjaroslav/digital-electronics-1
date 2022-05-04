@@ -52,7 +52,14 @@ begin
                 s_cnt_local <= 0;   -- Clear local counter
                 ce_o        <= '0'; -- Set output to low
 
-            
+            -- Test number of clock periods
+            elsif (s_cnt_local >= (g_MAX - 1)) then
+                s_cnt_local <= 0;   -- Clear local counter
+                ce_o        <= '1'; -- Generate clock enable pulse
+
+            else
+                s_cnt_local <= s_cnt_local + 1;
+                ce_o        <= '0';
             end if;
         end if;
     end process p_clk_ena;
