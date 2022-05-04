@@ -55,7 +55,7 @@ Převodník na 7mi segmentový displej:
 ![unknown](https://user-images.githubusercontent.com/99871518/166684341-8de35626-589e-4e38-aa76-c6ffe7b51a29.png)
 
 **Clock_enable** 
-- Clock_enable nám zajišťuje zpomalení vnitřního clocku naší desky. To znamená, že nemusíme počítat každou náběžnou hranu clocku s frekncí třeba 400khz, ale počítáme pouze každou 100. náběžnou hranu (více záleží na uživatelském nastavení a na naší potřebě).
+- **Clock_enable** nám zajišťuje zpomalení vnitřního clocku naší desky. To znamená, že nemusíme počítat každou náběžnou hranu clocku s frekncí třeba 400khz, ale počítáme pouze každou 100. náběžnou hranu (více záleží na uživatelském nastavení a na naší potřebě).
 Blok našeho clock_enablu vypadá takto: 
 
 ![clock_enable](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Clockenable.jpg)
