@@ -34,7 +34,9 @@
 
 ## Hardware description
 Pro realizaci jsme použili dnesku Nexys-A7:
+
 ![deska](https://static.packt-cdn.com/products/9781789805413/graphics/image/12710_01_11.jpg)
+
 Pomocí switchů jsme schopni zadávat námi požadovaný vstupní signál morseovky, u nás tedy: **dot** či **dash**. V našem případě budeme používat pouze jeden switch na zadávání potřebných signálů.
 Dále na desce použijeme integrovaný sedmisegmentový display, do kterého zapíšeme dekodovaný výstupní signál.
 Do našeho kódu jsme ještě implementovali jeden button na reset.
@@ -43,7 +45,7 @@ Deska má sama v sobě generátor impilsů clock, který budeme využívat k dek
 <a name="modules"></a>
 
 ## VHDL modules description and simulations
-Při kompletaci našeho kódu budeme dodržovat standardní Morseovu abecedu:
+Při kompletaci našeho kódu budeme dodržovat standardní Morseovu abecedu.
 **Výchozí převody mezi znaky**
 
 Morseova abeceda:
@@ -139,7 +141,7 @@ Simulace a dekódovaní můžeme vidět na této simulaci:
 ![7seg](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/Simulace7seg.png)
 
 Na tého simulaci můžeme vidět vstupní signál **s_en** kdy máme **dash dot dot dash** na konci tohoto vstupního signálu můžeme vidět, že náš kód vyčkává 7 náběžných hran **s_enable** poté se k hodnotě bufferu přiřadá hodnota z morseovy abecedy. tedy pro nás **dash dot dot dash** == X a to zapíšeme na 7 segmentový displej pomocí "1100011".
-Dále můžeme vidět, že nám **s_reset** nám přepne obvod do začáteční polohy(vymaže buffer, čítání apod.)
+Dále můžeme vidět, že nám **s_reset** nám přepne obvod do začáteční polohy (vymaže buffer, čítání apod.)
 
 Simulace více vstupů po sobě: 
 ![3_signály](https://github.com/Polkorabjaroslav/digital-electronics-1/blob/main/labs/obraz/7segdecod_3sig.png)
@@ -151,7 +153,7 @@ Můžeme vidět, že obvod se vrací zpět původního stavu sám po uplynutí n
 
 ## TOP module description and simulations
 Náš top soubor zajišťuje kontakt mezi hardware vstupem a výstupem naší desky. 
-U tomto topu připojuneme jednotlivým výstupům hodnoty. 
+V tomto topu připojujeme jednotlivým výstupům hodnoty. 
 
 
 **Schéma našeho topu**
@@ -168,4 +170,6 @@ Write your text here
 ## References
 
 1. Nexys-A7 reference manuál (https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual?redirect=1)
-2. 
+2. LAB 04-segment (https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/04-segment/README.md)
+3. LAB 07-display_driver (https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
+4. 
