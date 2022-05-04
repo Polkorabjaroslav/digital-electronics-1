@@ -12,6 +12,7 @@
 - dokumentace projektu
 
 **Gočiková Erika**
+- Zpracování videa
 
 ### Table of contents
 
