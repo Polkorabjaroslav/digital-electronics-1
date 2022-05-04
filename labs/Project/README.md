@@ -164,7 +164,7 @@ V tomto topu připojujeme jednotlivým výstupům hodnoty.
 
 ## Video
 
-Write your text here
+Video k projektu (https://youtu.be/gulC7z_HuiI)
 
 <a name="references"></a>
 
